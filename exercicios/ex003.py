@@ -1,14 +1,6 @@
 # simulação simplística de uma conta bancária
 
 class ContaBanco:
-    """
-    Cria uma conta bancária e permite atualizar os atributos.
-
-    self.idb            - número único da conta
-    self.titular        - nome do indivíduo
-    self.saldo          - fundos depositados (0)
-    self.priv_saldo     - define se o saldo é privado (True)
-    """
     def __init__(self, idb, titular, saldo = 0, priv_saldo = True):
         self.idb = idb
         self.titular = titular
