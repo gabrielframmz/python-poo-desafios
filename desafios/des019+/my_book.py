@@ -1,9 +1,10 @@
-from lib import book_lib as bl
+from lib import book_class
 
 
 book_name = str(input('Dê um nome ao seu livro: '))
 book_pages = int(input('Quantas páginas será possível abrir? '))
-my_book = bl.Livro(book_name, book_pages)
+my_book = book_class.Livro(book_name, book_pages)
+
 
 while True:
     print(
