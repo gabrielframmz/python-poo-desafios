@@ -1,22 +1,18 @@
-# Versão expandida do desafio 19;
-# simula a abertura das páginas e seu conteúdo.
-# Extremamente básico e experimental.
-
 from rich import print
 from time import sleep
 from os import makedirs
 
 
 class Livro:
-    def __init__(self, title, pages):
+    def __init__(self, title: str, pages: int) -> None:
         self.title = title
         self.pages = pages
         self.current_page = 1
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f'{self.title}, {self.pages} páginas.'
 
-    def skip_pages(self, skips, reverse=False):
+    def skip_pages(self, skips: int, reverse: bool=False) -> str:
         step = 1 if not reverse else -1
 
         for _ in range(0, skips):
@@ -29,7 +25,7 @@ class Livro:
 
         return f'página {self.current_page} [green]<-- posição atual.[/]'
 
-    def open_current_page(self):
+    def open_current_page(self) -> None:
         makedirs(f'./books/{self.title.upper()}/', exist_ok=True)
         page_path = f'./books/{self.title.upper()}/{self.current_page}.txt'
 
@@ -57,4 +53,3 @@ class Livro:
             for txt in pg:
                 print(f'{txt}\n')
             pg.close()
-
