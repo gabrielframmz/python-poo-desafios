@@ -25,11 +25,10 @@ class ContaBanco:
             return self
 
 
-## PROGRAMA PRINCIPAL
+### testes
 minha_conta = ContaBanco(1, 'gabrielgg', 50000, False)
 print(minha_conta.__doc__)
 print(minha_conta)
 print(minha_conta.saque(2000))
 print(minha_conta.deposito(900))
 print(minha_conta.saque(100_000))
-

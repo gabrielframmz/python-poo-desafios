@@ -1,4 +1,3 @@
-# resenha analysis
 from rich import print as rprint
 from rich.panel import Panel
 

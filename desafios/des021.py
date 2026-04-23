@@ -22,10 +22,6 @@ class Caneta:
         return f'Você tem uma caneta da cor {self.cor.upper()} que está {"DESTAMPADA" if self.destampada else "TAMPADA"}.'
 
     def estado_tampa(self):
-        """
-        Altera o estado da tampa da caneta para aberto ou fechado,
-        dependendo de seu estado atual.
-        """
         self.destampada = not self.destampada
 
     def escrever(self, msg=''):
@@ -33,5 +29,3 @@ class Caneta:
             print(f'[{Caneta.cores[self.cor]}]{msg}[/]')
         else:
             print(f'A caneta está tampada! Por favor, remova a tampa.')
-
-
