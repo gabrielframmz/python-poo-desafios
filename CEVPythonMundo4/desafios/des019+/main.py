@@ -1,12 +1,12 @@
 # Versão expandida do desafio 19;
 # simula a abertura das páginas e seu conteúdo.
 # Extremamente básico e experimental.
-from module import class_book as cb
+from module import book
 
 def main() -> None:
     book_name = str(input('Dê um nome ao seu livro: '))
     book_pages = int(input('Quantas páginas será possível abrir? '))
-    my_book = cb.Livro(book_name, book_pages)
+    my_book = book.Livro(book_name, book_pages)
 
     while True:
         print(
