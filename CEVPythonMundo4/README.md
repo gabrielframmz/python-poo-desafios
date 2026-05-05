@@ -1,6 +1,6 @@
 # Python POO (Mundo 4)
 
-Apenas alguns desafios do Curso em Vídeo de **Python - Mundo 4**.
+Apenas alguns desafios do **Curso em Vídeo** de **Python - Mundo 4**.
 
 👇
 
